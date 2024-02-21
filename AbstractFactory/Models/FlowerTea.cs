@@ -4,7 +4,7 @@ namespace AbstractFactory.Models
 {
     internal class FlowerTea : ITea
     {
-        public string GetcaffeinatedTea(ICoffee abstractCoffee)
+        public string GetCaffeinatedTea(ICoffee abstractCoffee)
         {
             return $"you can get a caffeinated tea with {abstractCoffee.GetTaste()}";
         }

@@ -17,5 +17,5 @@ void ClientMethod(IAbstractFactory factory)
     var tea = factory.CreateTea();
 
     Console.WriteLine($"{tea.GetType()} | {coffee.GetTaste()}");
-    Console.WriteLine(tea.GetcaffeinatedTea(coffee));
+    Console.WriteLine(tea.GetCaffeinatedTea(coffee));
 }

@@ -4,6 +4,6 @@
     {
         public string GetType();
 
-        public string GetcaffeinatedTea(ICoffee abstractCoffee);
+        public string GetCaffeinatedTea(ICoffee abstractCoffee);
     }
 }

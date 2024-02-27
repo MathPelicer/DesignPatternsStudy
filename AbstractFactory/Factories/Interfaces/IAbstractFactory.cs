@@ -4,7 +4,7 @@ namespace AbstractFactory.Factories.Interfaces
 {
     public interface IAbstractFactory
     {
-        public ITea CreateTea();
+        public IMilkyDrink CreateMilkyDrink();
 
         public ICoffee CreateCoffee();
     }

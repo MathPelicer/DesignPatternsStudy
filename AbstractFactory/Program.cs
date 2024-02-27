@@ -3,19 +3,19 @@
 using AbstractFactory.Factories;
 using AbstractFactory.Factories.Interfaces;
 
-Console.WriteLine("The first coffee shop offers:");
+Console.WriteLine("The fancy coffeeshop offers:");
 
-ClientMethod(new CoffeeShop1Factory());
+ClientMethod(new FancyCoffeeShop());
 Console.WriteLine();
 
-Console.WriteLine("While the second one...");
-ClientMethod(new CoffeeShop2Factory());
+Console.WriteLine("While the cozy one...");
+ClientMethod(new CozyCoffeeShop());
 
 void ClientMethod(IAbstractFactory factory)
 {
     var coffee = factory.CreateCoffee();
-    var tea = factory.CreateTea();
+    var milkyDrink = factory.CreateMilkyDrink();
 
-    Console.WriteLine($"{tea.GetType()} | {coffee.GetTaste()}");
-    Console.WriteLine(tea.GetCaffeinatedTea(coffee));
+    Console.WriteLine($"{milkyDrink.GetType()} | {coffee.GetTaste()}");
+    Console.WriteLine(milkyDrink.GetCaffeinatedDrink(coffee));
 }

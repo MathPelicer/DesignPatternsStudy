@@ -2,11 +2,11 @@
 
 namespace AbstractFactory.Models
 {
-    public class ArabicaCoffee : ICoffee
+    public class FancyExpresso : ICoffee
     {
         string ICoffee.GetTaste()
         {
-            return "Arabica Type Coffee";
+            return "a fancy expresso shot";
         }
     }
 }

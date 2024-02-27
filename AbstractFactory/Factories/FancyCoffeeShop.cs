@@ -4,16 +4,16 @@ using AbstractFactory.Models.Interfaces;
 
 namespace AbstractFactory.Factories
 {
-    public class CoffeeShop1Factory : IAbstractFactory
+    public class FancyCoffeeShop : IAbstractFactory
     {
-        public ITea CreateTea()
+        public IMilkyDrink CreateMilkyDrink()
         {
-            return new FlowerTea();
+            return new FancyCappuccino();
         }
 
         public ICoffee CreateCoffee()
         {
-            return new ArabicaCoffee();
+            return new FancyExpresso();
         }
     }
 }
